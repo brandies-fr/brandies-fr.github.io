@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Fonts*/
+@font-face {
+	font-family: AGENCYB;
+	src: url(./fonts/AGENCYB.woff);
+}
+
+@font-face {
+	font-family: Civilite;
+	src: url(./fonts/Civilite.otf);
+}
+
+@font-face {
+	font-family: Arka;
+	src: url(./assets/fonts/Arka.otf);
+}
+@font-face {
+	font-family: BirchStd;
+	src: url(./assets/fonts/BirchStd.otf);
+}
+
+@font-face {
+	font-family: Hallmark;
+	src: url(./assets/fonts/Hallmark.otf);
+}
+
+@font-face {
+	font-family: FrenchScript;
+	src: url(./assets/fonts/FrenchScript.ttf);
+}
+@font-face {
+	font-family: Smoochscans;
+	src: url(./assets/fonts/SmoochSans.ttf);
+}
+@font-face {
+	font-family: EphesisRegular;
+	src: url(./assets/fonts/EphesisRegular.ttf);
+}
+@font-face {
+	font-family: Polyspring;
+	src: url(./assets/fonts/Polyspring.otf);
+}
+@font-face {
+	font-family: TrajanRegular;
+	src: url("./assets/fonts/TrajanRegular.woff2") format("woff2"), url("./assets/fonts/TrajanRegular.woff") format("woff");
+}
+
+.logointro{
+    width: 100%;
+    height: 100vh;
+}
+video{
+    width: 100%;
+	height:100%;
+	position: absolute;
+	top: -40px;
+	left: -10px;
+    object-fit: cover;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.products-video{
+    width: 100%;
+	height:100vh;	
+    object-fit: cover;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.kodi{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    object-fit: scale-down;
+}
+.h-content {
+	position: absolute;
+	left: 20vw;
+	top: 65vh;
+	z-index: 999;
+	width: 60vw;	
+	animation: h-con ease-in 2s;
+}
+.h-content p {
+    
+    font-size: clamp(15px, 3.3vw, 200px);
+	font-family: Civilite;
+	color: #ffe400;
+	font-weight: 500;
+	line-height: .8;
+    text-align: center;
+
+}
+.wine-type{	
+    padding-top: 2em;
+	font-family: TrajanRegular;
+	font-size: 1.2rem;
+	text-align: center;
+	justify-content: center;
+	color: #ffe400;
+	font-weight:400;
+	letter-spacing: -0.5px;
+	
+  }
+  /**********************
+	Social Media icon
+***********************/
+.social-media-icons {
+
+	/*z-index: 2001;*/
+	top: .5%;
+	right: 1%;
+	position: fixed;
+	z-index: 999;
+	
+}
+
+.social-media-icons ul {
+	/*padding: 5px;*/
+	display: flex;
+	list-style: none;
+
+
+}
+
+.social-media-icons ul li a span {
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+	min-height: 15px;
+}
+
+.social-media-icons ul li a img {
+    width: clamp(2vw, 3vw, 10vw);
+	padding: 5px 5px 5px 2px;
+	/* width: 100%; */
+	transition: transform 0.5s ease-out;
+
+}
+
+.social-media-icons ul li a:hover img {
+	transform: rotate(360deg);
+}
+.ss_download{
+	animation: ss_download ease 2s;
+}
+@keyframes ss_download{
+	0%{	
+		filter: blur(5px);	
+		transform: scale(1.3) rotate(90deg);		
+	}
+	100%{		
+		filter: blur(0px);	
+		transform: scale(1) rotate(0deg);		
+	}
+}
+.ss_facebook{
+	animation: ss_facebook ease 1.5s;
+}
+@keyframes ss_facebook{
+	0%{		
+		filter: blur(5px);	
+		transform: scale(0.8) rotate(-90deg);		
+	}
+	100%{	
+		filter: blur(0px);		
+		transform: scale(1) rotate(0deg);		
+	}
+}
+.ss_insta{
+	animation: ss_insta ease 2s;
+}
+@keyframes ss_insta{
+	0%{		
+		filter: blur(5px);	
+		transform: scale(1.6) rotate(-180deg);		
+	}
+	100%{	
+		filter: blur(0px);		
+		transform: scale(1) rotate(0deg);		
+	}
+}
+.ss_twitter{
+	animation: ss_twitter ease 2s;
+}
+@keyframes ss_twitter{
+	0%{		
+		filter: blur(5px);	
+		transform: scale(0.5) rotate(-360deg);		
+	}
+	100%{		
+		filter: blur(0px);	
+		transform: scale(1) rotate(0deg);		
+	}
+}
+.ss_whatsapp{
+	animation: ss_whatsapp ease 3s;
+}
+@keyframes ss_whatsapp{
+	0%{		
+		filter: blur(5px);	
+		transform: scale(2) rotate(360deg);		
+	}
+	100%{	
+		filter: blur(0px);		
+		transform: scale(1) rotate(0deg);		
+	}
+}
