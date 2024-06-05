@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Navbar } from '../components/Navbar'
-import product from "../assets/video/products.mp4"
+//import product from "../assets/video/products.mp4"
 export const Whoweare = () => {
   return (
     <div>
