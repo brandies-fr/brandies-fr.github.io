@@ -1,8 +1,8 @@
 import React from 'react'
-import logoanimation from "../assets/video/sample.mp4"
+// import logoanimation from "../assets/video/sample.mp4"
 import logowebm from "../assets/video/brandies.webm"
 import logomov from "../assets/video/brandies.mov"
-import kodi from "../assets/images/kodi.png"
+// import kodi from "../assets/images/kodi.png"
 // import { Navbar } from './Navbar'
 export const LogoIntro = () => {
   return (

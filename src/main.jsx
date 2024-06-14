@@ -6,12 +6,10 @@ import { Cepages } from './pages/Cepages.jsx'
 import { Ambition } from './pages/Ambition.jsx'
 import { Whoweare } from './pages/Whoweare.jsx'
 import { Contact } from './pages/Contact.jsx'
-
+import {  createBrowserRouter,   RouterProvider,} from "react-router-dom";
+// import { HashRouter as Router } from 'react-router-dom';
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -39,9 +37,18 @@ const router = createBrowserRouter([
   element:  <Contact/> 
 },
 ]);
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    
-    <RouterProvider router = {router} />
-  </React.StrictMode>,
+     {/* <Router>
+      <App />
+    </Router> */}
+  <RouterProvider router = {router} />
+  </React.StrictMode>
 )
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+    
+//     <RouterProvider router = {router} />
+//   </React.StrictMode>,
+// )

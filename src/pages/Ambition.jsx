@@ -1,4 +1,5 @@
 import React from 'react'
+import Plx from "react-plx";
 // import { Navbar } from '../components/Navbar'
 
 export const Ambition = () => {
@@ -6,15 +7,90 @@ export const Ambition = () => {
     <div>
   
         {/* Header Section */}
-        <div className='bg-cepage-bg-img  w-full h-[700px]  bg-cover bg-center bg-no-repeat  ' >
-        <div className='container mx-auto pt-20 text-center '>
-              <div className=" ">
-                  <article class="text-wrap text-7xl font-Trojan pt-36 ">
-                          Ambition Header Section
-                  </article>
-                </div>
-          </div>
-        </div>
+        <div className='bg-ambition-header-bg  w-full  h-screen bg-cover bg-center bg-no-repeat overflow-hidden ' >
+            <div className='  d-flex relative bg-contain object-none top-48 '>
+            <Plx
+                                      parallaxData={[
+                                       
+                                        {
+                                          start: 0,
+                                          end: 200,
+                                          easing: "ease-in",
+                                          properties: [
+                                            {
+                                              startValue: 1,
+                                              endValue: -700,
+                                              property: "translateX"          
+                                            }
+                                          ]
+                                        }                                        
+                                       
+                                      ]}
+                                      style={{
+                                        position: "absolute",         
+                                        width: "100%",
+                                        zIndex: 100,
+                                     
+                                      }}
+                                    >
+                      <img className='absolute  left-0  w-6/12   scale-x-[-1]   lg:w-6/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/gate.png' /> 
+                              </Plx>
+                      <Plx
+                                      parallaxData={[
+                                       
+                                        {
+                                          start: 0,
+                                          end: 200,
+                                          easing: "ease-in",
+                                          properties: [
+                                            {
+                                              startValue: 1,
+                                              endValue: 700,
+                                              property: "translateX"          
+                                            }
+                                          ]
+                                        }                                        
+                                       
+                                      ]}
+                                      style={{
+                                        position: "absolute",         
+                                        width: "100%",
+                                        zIndex: 100,
+                                     
+                                      }}
+                                    >
+
+                      <img className='absolute right-0 lg:w-6/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/gate.png' /> 
+                      </Plx> 
+                      <Plx
+                                      parallaxData={[
+                                       
+                                        {
+                                          start: 0,
+                                          end: 200,
+                                          easing: "ease-in",
+                                          properties: [
+                                            {
+                                              startValue: 1,
+                                              endValue: 300,
+                                              property: "translateY"          
+                                            }
+                                          ]
+                                        }                                        
+                                       
+                                      ]}
+                                      style={{
+                                        position: "absolute",         
+                                        width: "100%",
+                                        zIndex: 100,
+                                     
+                                      }}
+                                    >
+
+                      <img className='absolute right-20 top-40  lg:w-4/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/title.png' /> 
+                      </Plx> 
+              </div>
+            </div>
         {/*Authenticity */}
         <div className='bg-ambition-bg-odd  w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
               <div className='container mx-auto p-5 text-center '>

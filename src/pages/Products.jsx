@@ -1,19 +1,68 @@
 import React from 'react'
 // import { Navbar } from '../components/Navbar'
-import product from "../assets/video/products.mp4"
+// import product from "../assets/video/products.mp4"
+import Plx from "react-plx"
 export const Products = () => {
   return (
     <div>
     {/* <Navbar /> */}
         {/* Header Section */}
-        <div className='bg-cepage-bg-img  w-full h-[700px]  bg-cover bg-center bg-no-repeat  ' >
-        <div className='container mx-auto pt-20 text-center '>
-              <div className=" ">
-                  <article class="text-wrap text-7xl font-Trojan pt-36 ">
-                         Products Header Section
-                  </article>
-                </div>
-          </div>
+        <div className='bg-products-header-bg  w-full h-screen  bg-cover bg-center bg-no-repeat  overflow-hidden' >
+        <div className='  d-flex relative bg-contain object-none top-56 '>
+            <Plx
+                                      parallaxData={[
+                                       
+                                        {
+                                          start: 0,
+                                          end: 200,
+                                          easing: "ease-in",
+                                          properties: [
+                                            {
+                                              startValue: 1,
+                                              endValue: -700,
+                                              property: "translateX"          
+                                            }
+                                          ]
+                                        }                                        
+                                       
+                                      ]}
+                                      style={{
+                                        position: "absolute",         
+                                        width: "100%",
+                                        zIndex: 100,
+                                     
+                                      }}
+                                    >
+                      <img className='absolute  left-72  w-3/12      lg:w-3/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/products/drum.png' /> 
+                              </Plx>
+                      <Plx
+                                      parallaxData={[
+                                       
+                                        {
+                                          start: 0,
+                                          end: 200,
+                                          easing: "ease-in",
+                                          properties: [
+                                            {
+                                              startValue: 1,
+                                              endValue: 700,
+                                              property: "translateX"          
+                                            }
+                                          ]
+                                        }                                        
+                                       
+                                      ]}
+                                      style={{
+                                        position: "absolute",         
+                                        width: "100%",
+                                        zIndex: 100,
+                                     
+                                      }}
+                                    >
+
+                      <img className='absolute right-20 lg:w-5/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/products/title.png' /> 
+                      </Plx> 
+              </div>
         </div>
         {/* Armagnac*/}
         <div className='bg-armagnac-bg  w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            

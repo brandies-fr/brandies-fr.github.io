@@ -37,6 +37,7 @@ export default {
       },
       backgroundImage:{
         // Cepage Page
+        'cepage-header-bg': "url(./src/assets/images/cepage/header-bg-img.jpg)",
         'cepage-bg-img':"url(./src/assets/images/page-bg.jpg)",
         'lemerlot-bg':"url(./src/assets/images/le-merlot-bg.jpg)",
         'ugni-blanc-bg':"url(./src/assets/images/ugni-blanc-bg.jpg)",
@@ -47,6 +48,7 @@ export default {
         'title-bg' : "url(./src/assets/images/title-bg.png)",
         'caberbet-grapes' : "url(./src/assets/images/carbanet-grapes.png)",
         // Ambition Page
+        'ambition-header-bg': "url(./src/assets/images/ambition/header-bg1.jpg)",
         'ambition-bg-odd':"url(./src/assets/images/ambition-bg-odd.jpg)",
         'ambition-bg-even':"url(./src/assets/images/ambition-bg-even.jpg)",
         // Product Page
@@ -57,6 +59,8 @@ export default {
         'saint-emilion-bg':"url(./src/assets/images/saint-emilion-bg.jpg)",
         // Who we are
         'whoweare-bg':"url(./src/assets/images/whoweare-bg.jpg)",
+        // Products
+        'products-header-bg':"url(./src/assets/images/products/header-bg.jpg)",
       },
     },
   },
