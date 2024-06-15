@@ -1,5 +1,5 @@
 {
-  "homepage": "http://sathiyapk.github.io/brandies",
+  "homepage": ".",
   "name": "brandies",
   "private": true,
   "version": "0.0.0",
@@ -9,14 +9,20 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run deploy",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-plx": "^2.1.2",
+=======
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+>>>>>>> e233e6bdd633b933a314502863626da4534b79d9
     "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
