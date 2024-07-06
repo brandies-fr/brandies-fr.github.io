@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://brandies-fr..github.io",
   "name": "brandies",
   "private": true,
   "version": "0.0.0",
@@ -13,14 +13,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-plx": "^2.1.2",
-=======
+    "animated-tailwindcss": "^4.0.0",
     "react": "^18.3.1",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.3.1",
->>>>>>> e233e6bdd633b933a314502863626da4534b79d9
+    "react-plx": "^2.1.2",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.11"
@@ -37,6 +34,7 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-static-copy": "^1.0.5"
   }
 }

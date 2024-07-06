@@ -1,103 +1,133 @@
 import React from 'react'
 import Plx from "react-plx";
 // import { Navbar } from '../components/Navbar'
+import HamburgerMenu from '../components/HamburgerMenu';
+// import { HeaderIcons } from '../components/HeaderIcons';
+import bgOdd from '../assets/images/bg-odd.jpg';
+import bgoddRes from '../assets/images/ambition-responsive-bg.jpg';
+import bgEven from '../assets/images/bg-even.jpg';
+import bgevenRes from '../assets/images/bg-even-responsive.jpg';
+// Video
+import campFire from '../assets/video/campfire.mp4'
+import smoke from '../assets/video/smoke.mp4';
+// images
+import gateImage from '../assets/images/ambition/gate.png';
+import ambitionTitle from '../assets/images/ambition/title.png';
+import authenticityTitle from '../assets/images/authenticity-title.png';
+// import authenticityImg from '../assets/images/authenticity-img.png';
+import authenticityImg from '../assets/images/authenticity.gif';
+import excellenceImg from '../assets/images/excellence.gif';
+import excellenceTitle from '../assets/images/excellence-title.png';
+import traditionTitle from '../assets/images/tradition-title.png';
+import traditionImg from '../assets/images/tradition.gif';
+import passionImg from '../assets/images/passion-img.png';
+import passionTitle from '../assets/images/passion-title.png';
+
 
 export const Ambition = () => {
   return (
     <div>
-  
+     <HamburgerMenu/>
+     {/* <HeaderIcons /> */}
         {/* Header Section */}
-        <div className='bg-ambition-header-bg  w-full  h-screen bg-cover bg-center bg-no-repeat overflow-hidden ' >
-            <div className='  d-flex relative bg-contain object-none top-48 '>
-            <Plx
-                                      parallaxData={[
-                                       
-                                        {
-                                          start: 0,
-                                          end: 200,
-                                          easing: "ease-in",
-                                          properties: [
-                                            {
-                                              startValue: 1,
-                                              endValue: -700,
-                                              property: "translateX"          
-                                            }
-                                          ]
-                                        }                                        
-                                       
-                                      ]}
-                                      style={{
-                                        position: "absolute",         
-                                        width: "100%",
-                                        zIndex: 100,
-                                     
-                                      }}
-                                    >
-                      <img className='absolute  left-0  w-6/12   scale-x-[-1]   lg:w-6/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/gate.png' /> 
-                              </Plx>
-                      <Plx
-                                      parallaxData={[
-                                       
-                                        {
-                                          start: 0,
-                                          end: 200,
-                                          easing: "ease-in",
-                                          properties: [
-                                            {
-                                              startValue: 1,
-                                              endValue: 700,
-                                              property: "translateX"          
-                                            }
-                                          ]
-                                        }                                        
-                                       
-                                      ]}
-                                      style={{
-                                        position: "absolute",         
-                                        width: "100%",
-                                        zIndex: 100,
-                                     
-                                      }}
-                                    >
+        <div className='bg-ambition-header-bg w-full h-screen bg-cover bg-center bg-no-repeat overflow-hidden'>
+  <div className='relative h-full flex justify-between items-end'>
+    {/* Left image */}
+    <Plx
+      parallaxData={[
+        {
+          start: 0,
+          end: 200,
+          easing: "ease-in",
+          properties: [
+            {
+              startValue: 0,
+              endValue: -700,
+              property: "translateX"
+            }
+          ]
+        }
+      ]}
+      style={{
+        position: "relative",
+        width: "100%",
+        zIndex: 100,
+      }}
+    >
+      <div className="absolute left-0 bottom-0 w-full">
+        <img className="w-full md:w-full lg:w-full  xl:w-full scale-x-[-1]" src={gateImage} alt="Left Gate Image" />
+      </div>
+    </Plx>
 
-                      <img className='absolute right-0 lg:w-6/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/gate.png' /> 
-                      </Plx> 
-                      <Plx
-                                      parallaxData={[
-                                       
-                                        {
-                                          start: 0,
-                                          end: 200,
-                                          easing: "ease-in",
-                                          properties: [
-                                            {
-                                              startValue: 1,
-                                              endValue: 300,
-                                              property: "translateY"          
-                                            }
-                                          ]
-                                        }                                        
-                                       
-                                      ]}
-                                      style={{
-                                        position: "absolute",         
-                                        width: "100%",
-                                        zIndex: 100,
-                                     
-                                      }}
-                                    >
+    {/* Right image */}
+    <Plx
+      parallaxData={[
+        {
+          start: 0,
+          end: 200,
+          easing: "ease-in",
+          properties: [
+            {
+              startValue: 0,
+              endValue: 700,
+              property: "translateX"
+            }
+          ]
+        }
+      ]}
+      style={{
+        position: "relative",
+        width: "100%",
+        zIndex: 100,
+      }}
+    >
+      <div className="absolute right-0 bottom-0 w-full">
+        <img className="w-full md:full lg:w-full  xl:w-full" src={gateImage} alt="Right Gate Image" />
+      </div>
+    </Plx>
+    <Plx
+  parallaxData={[
+    {
+      start: 0,
+      end: 300,
+      easing: "ease-in",
+      properties: [
+        {
+          startValue: 1,
+          endValue: 500,
+          property: "translateY"          
+        }
+      ]
+    }                                        
+  ]}
+  style={{
+    position: "absolute",
+    width: "100%",
+    zIndex: 100,
+  }}
+>
+<div className="flex justify-center items-center h-screen">
+  <img className="absolute xs:w-8/12 sm:w-8/12 md:w-6/12 lg:w-4/12" src={ambitionTitle} alt="Ambition Title" />
+</div>
 
-                      <img className='absolute right-20 top-40  lg:w-4/12  md:w-6/12 sm:w-6/12 '  src='../src/assets/images/ambition/title.png' /> 
-                      </Plx> 
-              </div>
-            </div>
+</Plx>
+
+  </div>
+</div>
+
+
         {/*Authenticity */}
-        <div className='bg-ambition-bg-odd  w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+        <div style={{
+                              '--md-img': `url(${bgOdd})`,
+                              '--xs-img': `url(${bgoddRes})`,
+                              '--sm-img': `url(${bgoddRes})`,
+                            }}
+        className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
               <div className='container mx-auto p-5 text-center '>
                   <div className="grid grid-cols-1 gap-8   md:grid-cols-2 ">
                   <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  pt-32'>
-                                      <img className='w-96 h-auto '  src='../src/assets/images/authenticity-title.png' />                                        
+                                      <img className='w-96 h-auto '  src={authenticityTitle} />                                        
                                         <p className=' font-Trojan 
                                    mb-3
                                    w-9/12                                   
@@ -124,7 +154,7 @@ export const Ambition = () => {
                                     </div>
                                   </article>
                             <div className=' grid grid-cols-1 gap-4 place-items-center'>
-                                   <img className='w-full h-auto'  src='../src/assets/images/authenticity-img.png' />
+                                   <img className='w-full h-auto'  src= {authenticityImg}/>
                               </div>
                             
                     </div>
@@ -132,15 +162,23 @@ export const Ambition = () => {
            
         </div>
         {/*Excellence */}
-        <div className='bg-ambition-bg-even  w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
+        
+  
+         <div style={{
+          '--md-img': `url(${bgEven})`,
+          '--xs-img': `url(${bgevenRes})`,
+          '--sm-img': `url(${bgevenRes})`,
+        }}
+        
+        className=' xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
               <div className='container mx-auto  text-center '>
                   <div className="grid grid-cols-1 md:grid-cols-2 ">
-                  <div className=' grid grid-cols-1 place-items-left pt-5'>
-                                   <img className='w-full h-auto md:w-11/12'  src='../src/assets/images/excellence-image.png' />
+                  <div className=' grid grid-cols-1 place-items-center pt-5'>
+                                   <img className='w-full h-auto md:w-11/12'  src={excellenceImg} />
                               </div>
                                   <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  pt-32'>
-                                      <img className='w-96 h-auto '  src='../src/assets/images/excellence-title.png' />                                        
+                                      <img className='w-96 h-auto '  src={excellenceTitle} />                                        
                                       <p className=' font-Trojan 
                                    mb-3
                                    w-11/12                                   
@@ -172,12 +210,17 @@ export const Ambition = () => {
                 </div>            
         </div>
     {/*Tradition */}
-    <div className='bg-ambition-bg-odd  w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+    <div style={{
+                              '--md-img': `url(${bgOdd})`,
+                              '--xs-img': `url(${bgoddRes})`,
+                              '--sm-img': `url(${bgoddRes})`,
+                            }}
+        className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]   w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
               <div className='container mx-auto p-5 text-center '>
                   <div className="grid grid-cols-1 gap-8   md:grid-cols-2 ">
                   <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  pt-32'>
-                                      <img className='w-96 h-auto '  src='../src/assets/images/tradition-title.png' />                                        
+                                      <img className='w-96 h-auto '  src={traditionTitle} />                                        
                                         <p className=' font-Trojan 
                                    mb-3
                                    w-9/12                                   
@@ -202,8 +245,10 @@ export const Ambition = () => {
                                     </p>
                                     </div>
                                   </article>
-                            <div className=' grid grid-cols-1 gap-4 place-items-center'>
-                                   <img className='w-full h-auto'  src='../src/assets/images/tradition-img.png' />
+                            <div className=' grid grid-cols-1 gap-4 place-items-center  overflow-hidden'>
+                                   <img className='w-full h-auto'  src={traditionImg} />
+                                 
+                          
                               </div>
                             
                     </div>
@@ -211,15 +256,24 @@ export const Ambition = () => {
            
         </div>
         {/*Passion*/}
-        <div className='bg-ambition-bg-even  w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
+        <div style={{
+          '--md-img': `url(${bgEven})`,
+          '--xs-img': `url(${bgevenRes})`,
+          '--sm-img': `url(${bgevenRes})`,
+        }}
+        className=' xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
+            <video muted={true} autoPlay={true} playsInline={true} loop={true} className='  absolute scale-x-[-1]   smoke_video '  >
+                              <source src={smoke} type="video/mp4" />
+                          </video>
               <div className='container mx-auto  text-center '>
                   <div className="grid grid-cols-1 md:grid-cols-2 ">
-                  <div className=' grid grid-cols-1 place-items-left pt-5'>
-                                   <img className='w-full h-auto md:w-11/12'  src='../src/assets/images/passion-img.png' />
+                  <div className=' grid grid-cols-1 place-items-center pt-3 '>
+                
+                                   <img className='w-full h-auto md:w-11/12'  src={passionImg} />
                               </div>
                                   <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  pt-32'>
-                                      <img className='w-96 h-auto '  src='../src/assets/images/passion-title.png' />                                        
+                                      <img className='w-96 h-auto '  src={passionTitle} />                                        
                                       <p className=' font-Trojan 
                                    mb-3
                                    w-11/12                                   
@@ -254,3 +308,4 @@ export const Ambition = () => {
     </div>
   )
 }
+export default Ambition;
