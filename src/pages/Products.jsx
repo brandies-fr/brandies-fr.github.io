@@ -1,6 +1,7 @@
 // import React from 'react'
 import React, { useState, useEffect } from "react";
 import HamburgerMenu from '../components/HamburgerMenu';
+import { useInView } from "react-intersection-observer";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import Plx from "react-plx";
 import drum from '../assets/images/products/drum.png';
@@ -30,8 +31,18 @@ import xoBg from '../assets/images/xo-bg.jpg';
 import xobgRes from '../assets/images/xo-bg-responsive.jpg';
 import saintBg from '../assets/images/saint-emilion-bg.jpg' ;
 import saintbgRes from '../assets/images/saint-bg-responsive.jpg';
+import armagnacTitle from '../assets/images/armagnac-title.png';
+import cognacTitle from '../assets/images/cognac-title.png';
+import xoTitle from '../assets/images/xobrandies-title.png';
+import bordeauxTitle from '../assets/images/bordeaux-title.png';
+import saintemillionTitle from '../assets/images/saintemillion-title.png'
+
 
 export const Products = () => {
+  const { ref: div1, inView: div1Inview,  } = useInView({
+    /* Optional options */
+    threshold: 0.8,
+  });
   
   return (
     <div>
@@ -102,12 +113,17 @@ export const Products = () => {
                               '--sm-img': `url(${armagnacbgRes})`,
                             }}
         className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  
-        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' > 
+        <a href="/armagnac">
+        <div className="flex items-center justify-center pt-20"> 
+        <img className='w-96 h-auto '  src={armagnacTitle} /> 
+        </div>           
               <div className='container mx-auto p-5 text-center '>
-                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[42%_auto] pt-20">                 
+                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[55%_auto] ">                 
                     
                               <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>                                                                           
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>
+                                                                                                             
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
@@ -140,15 +156,20 @@ export const Products = () => {
                                        comedy, dance and music. She is also said to be tall and most beautiful with lovely gait.  </p>
                                        <img className='w-60  h-auto place-items-center'  src={marie} />
                                     </div>
-                                    <a href="/armagnac">Armagnac</a>
+                                    
                                   </article>
+                                  <script>
+                                    
+                                  </script>
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                  <div  className='relative preserve-3d  group-hover:my-rotate-y-180  w-11/12  xs:w-full duration-1000'>
-                                  <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
-                                        <img className='w-full h-auto'  src={armagnacBottle} />
+                                  <div ref={div1}  className='relative preserve-3d   w-11/12  xs:w-full duration-1000 ' >
+                                 
+
+                                  <div className='absolute   w-full h-screen xs:h-auto  flex items-center justify-center'>
+                                  {!div1Inview && <img className='w-10/12 h-auto '  src={armagnacBottle} /> }
                                       </div>
-                                      <div className=' w-full h-screen xs:h-auto   my-rotate-y-180 backface-hidden'>
-                                      <img className='w-full h-auto'  src={armagnacBottle1} />
+                                      <div className=' w-full h-screen xs:h-auto   flex items-center justify-center '>
+                                      {div1Inview && <img className='w-10/12 h-auto '  src={armagnacBottle1} /> }
                                       </div>
                                    </div>                                 
                               </div>                              
@@ -165,7 +186,8 @@ export const Products = () => {
                                   </div>
                                 </div> */}
                     </div>
-                </div>           
+                </div>    
+                </a>       
         </div>   
        
         {/* Cognac*/}
@@ -175,9 +197,15 @@ export const Products = () => {
                               '--sm-img': `url(${cognacbgRes})`,
                             }}
         className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  
-        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' > 
+        <a href="/cognac">  
+        <div className="flex items-center justify-center pt-20"> 
+            <img className='w-96 h-auto text-center'  src={cognacTitle} />
+        </div>
+                
               <div className='container mx-auto p-5 text-center '>
-                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[42%_auto] pt-36">                 
+              
+                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto]">                 
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                   <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full h-auto duration-1000'>
                                       <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
@@ -189,7 +217,8 @@ export const Products = () => {
                                    </div>                                 
                               </div>     
                               <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>                                                                           
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>
+                                                                                                              
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
@@ -225,7 +254,8 @@ export const Products = () => {
                                     </div>
                                   </article>                           
                     </div>
-                </div>           
+                </div>   
+                </a>        
         </div>   
          {/* XO*/}
          <div style={{
@@ -234,12 +264,17 @@ export const Products = () => {
                               '--sm-img': `url(${xobgRes})`,
                             }}
         className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  
-        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+        w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >  
+        <a href="/xobrandies">
+        <div className="flex items-center justify-center pt-20"> 
+              <img className='w-96 h-auto '  src={xoTitle} />   
+        </div>          
               <div className='container mx-auto p-5 text-center '>
-                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[42%_auto] pt-20">                 
+                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[55%_auto] ">                 
                     
                               <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>                                                                           
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'> 
+                                                                                                          
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
@@ -285,7 +320,8 @@ export const Products = () => {
                                    </div>                                 
                               </div>                              
                     </div>
-                </div>           
+                </div>
+                </a>           
         </div>   
         
         {/* Bordueax - wine*/}
@@ -295,20 +331,25 @@ export const Products = () => {
                               '--sm-img': `url(${bordeauxbgRes})`,
                             }}
         className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]    w-full h-auto  bg-cover bg-center bg-no-repeat bg-blend-darken ' >            
+        <a href="/bordeauxsuperieur">
+        <div className="flex items-center justify-center pt-20"> 
+            <img className='w-96 h-auto '  src={bordeauxTitle} />
+        </div>
               <div className='container mx-auto p-5 text-center '>
-                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[42%_auto] ">
+                  <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto] ">
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                   <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full h-auto duration-1000'>
-                                      <div className='absolute   w-full h-auto backface-hidden pt-20'>
+                                      <div className='absolute   w-full h-auto backface-hidden '>
                                         <img className='w-full h-auto'  src={borduexWine} />
                                       </div>
-                                      <div className=' w-full h-auto   my-rotate-y-180 backface-hidden pt-20'>
+                                      <div className=' w-full h-auto   my-rotate-y-180 backface-hidden '>
                                       <img className='w-full h-auto'  src={borduexWine1} />
                                       </div>
                                    </div>                                 
                               </div>                   
                          <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-24'>                                                                           
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center  '>
+                                                                                                              
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
@@ -344,7 +385,8 @@ export const Products = () => {
                                     </div>
                                   </article>                           
                     </div>
-                </div>           
+                </div> 
+                </a>          
         </div>  
         {/* Saint-emilion*/}
        
@@ -354,10 +396,15 @@ export const Products = () => {
                               '--sm-img': `url(${saintbgRes})`,
                             }}
         className='xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]   w-full h-auto  bg-cover bg-center bg-no-repeat  ' >            
+        <a href="/lussacsaintemillion">
+        <div className="flex items-center justify-center pt-20"> 
+        <img className='w-96 h-auto '  src={saintemillionTitle} />  
+        </div>
               <div className='container mx-auto p-10 text-center '>
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[60%_auto] ">
                   <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-20'>                                                                           
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center '>
+                                                                                                     
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
@@ -404,8 +451,10 @@ export const Products = () => {
                               </div> 
                                                        
                     </div>
-                </div>           
+                </div>   
+            </a>        
         </div>
+        
     </div>
   )
 }
