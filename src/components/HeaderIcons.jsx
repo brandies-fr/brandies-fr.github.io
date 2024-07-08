@@ -5,7 +5,7 @@ import twitter from "../assets/images/twitter.png"
 // import instagram from "../assets/images/instagram.png"
 export const HeaderIcons = () => {
   return (
-    <div className="social-media-icons">
+    <div className="social-media-icons ">
 
       <ul>
          <li className="ss_facebook"><a href="https://www.facebook.com/brandies.fr" target="_blank"><img className="img-fluid" src={facebook} /></a></li>
