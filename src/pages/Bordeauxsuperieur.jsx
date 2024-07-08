@@ -1,6 +1,6 @@
 import React from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
-import xoLogo from '../assets/images/xo-logo.png'
+import xoLogo from '../assets/images/bordeaux-logo.png'
 import bordeauxBottle from '../assets/images/bordeaux-bottle1.png'
 import homeBg from '../assets/images/product-single-bg.jpg';
 import homebgRes from '../assets/images/armagnac-single-page-res.jpg';
