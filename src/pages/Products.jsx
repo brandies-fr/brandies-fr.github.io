@@ -41,7 +41,23 @@ import saintemillionTitle from '../assets/images/saintemillion-title.png'
 export const Products = () => {
   const { ref: div1, inView: div1Inview,  } = useInView({
     /* Optional options */
+    threshold: 0.6,
+  });
+  const { ref: div2, inView: div2Inview,  } = useInView({
+    /* Optional options */
+    threshold: 0.7,
+  });
+  const { ref: div3, inView: div3Inview,  } = useInView({
+    /* Optional options */
     threshold: 0.8,
+  });
+  const { ref: div4, inView: div4Inview,  } = useInView({
+    /* Optional options */
+    threshold: 0.9,
+  });
+  const { ref: div5, inView: div5Inview,  } = useInView({
+    /* Optional options */
+    threshold: 0.9,
   });
   
   return (
@@ -122,7 +138,7 @@ export const Products = () => {
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[55%_auto] ">                 
                     
                               <article class="text-wrap ">
-                                  <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>
+                                  <div className=' grid grid-cols-1 gap-4  place-items-center  '>
                                                                                                              
                                         <p className=' font-Trojan 
                                    mb-3                                                                    
@@ -158,20 +174,16 @@ export const Products = () => {
                                     </div>
                                     
                                   </article>
-                                  <script>
-                                    
-                                  </script>
+                                  
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                  <div ref={div1}  className='relative preserve-3d   w-11/12  xs:w-full duration-1000 ' >
-                                 
-
-                                  <div className='absolute   w-full h-screen xs:h-auto  flex items-center justify-center'>
-                                  {!div1Inview && <img className='w-10/12 h-auto '  src={armagnacBottle} /> }
-                                      </div>
-                                      <div className=' w-full h-screen xs:h-auto   flex items-center justify-center '>
-                                      {div1Inview && <img className='w-10/12 h-auto '  src={armagnacBottle1} /> }
-                                      </div>
-                                   </div>                                 
+                                          <div ref={div1}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                                <div className='  xs:h-auto  flex items-center justify-center '  >
+                                                {!div1Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={armagnacBottle} /> }
+                                                    </div>
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    {div1Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={armagnacBottle1} /> }
+                                                    </div>
+                                          </div>                                
                               </div>                              
                               {/* <div className="grid grid-cols-1 gap-4 bg-transparent  group perspective">
                                   <div className="relative preserve-3d w-11/12 xs:w-full  armagnac-section">
@@ -207,15 +219,15 @@ export const Products = () => {
               
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto]">                 
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                  <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full h-auto duration-1000'>
-                                      <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
-                                        <img className='w-full h-auto'  src={cognacBottle} />
-                                      </div>
-                                      <div className=' w-full h-screen xs:h-auto   my-rotate-y-180 backface-hidden'>
-                                      <img className='w-full h-auto'  src={cognacBottle1} />
-                                      </div>
-                                   </div>                                 
-                              </div>     
+                                          <div ref={div2}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                                <div className='  xs:h-auto  flex items-center justify-center '  >
+                                                {!div2Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={cognacBottle} /> }
+                                                    </div>
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    {div2Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={cognacBottle1} /> }
+                                                    </div>
+                                          </div>                                
+                              </div>       
                               <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  pt-10'>
                                                                                                               
@@ -310,14 +322,14 @@ export const Products = () => {
                                     </div>
                                   </article>
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                  <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-9/12  xs:w-full duration-1000'>
-                                      <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
-                                        <img className='w-full h-auto'  src={xoBottle} />
-                                      </div>
-                                      <div className=' w-full h-screen xs:h-auto   my-rotate-y-180 backface-hidden'>
-                                      <img className='w-full h-auto'  src={xoBottle1} />
-                                      </div>
-                                   </div>                                 
+                                          <div ref={div3}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                                <div className='  xs:h-auto  flex items-center justify-center '  >
+                                                {!div3Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={xoBottle} /> }
+                                                    </div>
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    {div3Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={xoBottle1} /> }
+                                                    </div>
+                                          </div>                                
                               </div>                              
                     </div>
                 </div>
@@ -338,15 +350,15 @@ export const Products = () => {
               <div className='container mx-auto p-5 text-center '>
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto] ">
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                  <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full h-auto duration-1000'>
-                                      <div className='absolute   w-full h-auto backface-hidden '>
-                                        <img className='w-full h-auto'  src={borduexWine} />
-                                      </div>
-                                      <div className=' w-full h-auto   my-rotate-y-180 backface-hidden '>
-                                      <img className='w-full h-auto'  src={borduexWine1} />
-                                      </div>
-                                   </div>                                 
-                              </div>                   
+                                          <div ref={div4}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                                <div className='  xs:h-auto  flex items-center justify-center '  >
+                                                {!div4Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={borduexWine} /> }
+                                                    </div>
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    {div4Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={borduexWine1} /> }
+                                                    </div>
+                                          </div>                                
+                              </div>                    
                          <article class="text-wrap ">
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  '>
                                                                                                               
@@ -439,7 +451,7 @@ export const Products = () => {
                                     and stands as the sole survivor among the royal children during the French Revolution of 1789. </p>
                                     </div>
                                   </article>
-                                  <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
+                                  {/* <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                   <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full  xs:w-full duration-1000'>
                                       <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
                                         <img className='w-full h-auto'  src={saintemilionBottle} />
@@ -448,7 +460,17 @@ export const Products = () => {
                                       <img className='w-full h-auto'  src={saintemilionBottle1} />
                                       </div>
                                    </div>                                 
-                              </div> 
+                              </div>  */}
+                               <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
+                                          <div ref={div5}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                                <div className='  xs:h-auto  flex items-center justify-center '  >
+                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBottle} /> }
+                                                    </div>
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    {div5Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={saintemilionBottle1} /> }
+                                                    </div>
+                                          </div>                                
+                              </div>   
                                                        
                     </div>
                 </div>   
