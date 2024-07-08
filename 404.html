@@ -23,6 +23,22 @@
             case l.href.includes("contact"):
                 l.replace(l.protocol + '//' + l.hostname + '?contact');
                 break;
+                case l.href.includes("armagnac"):
+                l.replace(l.protocol + '//' + l.hostname + '?armagnac');
+                break;
+                case l.href.includes("cognac"):
+                l.replace(l.protocol + '//' + l.hostname + '?cognac');
+                break;
+                case l.href.includes("xobrandies"):
+                l.replace(l.protocol + '//' + l.hostname + '?xobrandies');
+                break;
+                case l.href.includes("bordeauxsuperieur"):
+                l.replace(l.protocol + '//' + l.hostname + '?bordeauxsuperieur');
+                break;
+                case l.href.includes("lussacsaintemillion"):
+                l.replace(l.protocol + '//' + l.hostname + '?lussacsaintemillion');
+                break;
+                
 
             default:
                 l.replace(l.protocol + '//' + l.hostname);
