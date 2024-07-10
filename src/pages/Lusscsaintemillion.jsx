@@ -17,13 +17,14 @@ export const Lusscsaintemillion = () => {
   return (
     <div>
       <HamburgerMenu/>
-    <div
+      <div
     style={{
       '--xs-img': `url(${homebgRes})`,
       '--sm-img': `url(${homebgRes})`,
-      '--md-img': `url(${homeBg})`,
+      '--md-img': `url(${homebgRes})`,
+      '--lg-img': `url(${homeBg})`,
     }}
-    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto  bg-center bg-no-repeat ' >
+    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] lg:bg-[image:var(--lg-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto lg:min-h-screen lg:h-auto bg-center bg-no-repeat  ' >
             <video muted={true} autoPlay={true} playsInline={true} loop={true} className='  absolute smoke_video  scale-x-[-1]'  >
                 <source src={smoke} type="video/mp4" /> 
              </video>
@@ -52,13 +53,9 @@ export const Lusscsaintemillion = () => {
                                                     dark:first-letter:text-ambition-text-color 
                                                     first-letter:me-3 first-letter:float-start 
                                                     text-justify px-4 text-base">
-                                                            Description : Wine of remarkable character, boasting a deep, sustained purple hue. The delightful aroma offers sweet spices, brioche, and hints of white fruit, while the palate combines smooth yet powerful tannins with evolving oak nuances, resulting in a generous and fruit-rich wine.
-                                                            <br></br><br></br>
-                                                            Color : Beautiful sustained deep purple color. <br></br>
-
-                                                            Nose : Hints of sweet spices, brioche and black fruit. <br></br>
-
-                                                            Palate: Smooth and powerful tannins mixed with lovely oak tannins, which evolve constantly giving a fleshy generous wine with plenty of fruits.
+                                                           Saint-Emilion is a French red wine with a controlled designation of origin produced around the town of Saint-Emilion ,Gironde. It is part of the Bordeaux vineyard. 
+                                            <br></br>
+                                            The wines of Saint-Emilion are a blend of different grape varieties. The three main ones are Merlot 60% of the vineyard, Cabernet Franc or bouchet, nearly 30 and Cabernet Sauvignon about 10.
                                                             </p>
 
 
@@ -72,9 +69,14 @@ export const Lusscsaintemillion = () => {
                                     </div>
                                     <div className='grid grid-cols-1 gap-4'>
                                             <p className="font-Trojan text-base font-normal text-base  xs:text-ambition-text-color sm:text-ambition-text-color text-justify px-4">
-                                            Saint-Emilion is a French red wine with a controlled designation of origin produced around the town of Saint-Emilion ,Gironde. It is part of the Bordeaux vineyard. 
-                                            <br></br>
-                                            The wines of Saint-Emilion are a blend of different grape varieties. The three main ones are Merlot 60% of the vineyard, Cabernet Franc or bouchet, nearly 30 and Cabernet Sauvignon about 10.
+                                            Description : Wine of remarkable character, boasting a deep, sustained purple hue. The delightful aroma offers sweet spices, brioche, and hints of white fruit, while the palate combines smooth yet powerful tannins with evolving oak nuances, resulting in a generous and fruit-rich wine.
+                                                            <br></br><br></br>
+                                                            Color : Beautiful sustained deep purple color. <br></br>
+
+                                                            Nose : Hints of sweet spices, brioche and black fruit. <br></br>
+
+                                                            Palate: Smooth and powerful tannins mixed with lovely oak tannins, which evolve constantly giving a fleshy generous wine with plenty of fruits.
+                                            
                                             </p>
                                     </div>
                             </div>

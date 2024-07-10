@@ -21,9 +21,10 @@ export const Armagnac = () => {
     style={{
       '--xs-img': `url(${homebgRes})`,
       '--sm-img': `url(${homebgRes})`,
-      '--md-img': `url(${homeBg})`,
+      '--md-img': `url(${homebgRes})`,
+      '--lg-img': `url(${homeBg})`,
     }}
-    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto  bg-center bg-no-repeat  ' >
+    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] lg:bg-[image:var(--lg-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto lg:min-h-screen lg:h-auto bg-center bg-no-repeat  ' >
             <video muted={true} autoPlay={true} playsInline={true} loop={true} className='  absolute smoke_video  scale-x-[-1]'  >
                 <source src={smoke} type="video/mp4" /> 
              </video>
@@ -52,13 +53,12 @@ export const Armagnac = () => {
                                                     dark:first-letter:text-ambition-text-color 
                                                     first-letter:me-3 first-letter:float-start 
                                                     text-justify px-4">
-                                                            Description : Exquisite Armagnac with pale gold hue and refreshing, floral notes on the nose invite you to a delightful experience. The palate reveals a pleasing and lively character, accentuated by vibrant lemony notes, making it a perfect choice for those seeking a bright and refreshing indulgence.
-                                                            <br></br><br></br>
-                                                            Color : Amber, pale gold.<br></br>
-                                                            Nose : Fresh, with floral notes.<br></br>
-                                                            Palate : Pleasant and lively with hints of lemon and honey.
-                                                            </p>
-
+                                                            
+                                                            
+                                            Of all brandies, Armagnac is certainly the most precious and richest. Indeed, this Gascony speciality, born in the Gers region more than 700 years ago, is still elaborated according to an ancestral know-how in the greatest respect of the traditional method. Ageing is one of the key stages in the making of Armagnac: as the years go by in wood, the crystalline eau-de-vie becomes richer in color, texture, but above all in fragrance.
+                                            <br></br>
+                                            Armagnac is kept in wood barrels for many years, and the longer the maturation, the more rich and complex the brandy becomes. Whatever its age, Armagnac is a real pleasure to taste, whether you like it fiery and warm, or fine and intense.
+                                            </p>
 
                                                         </div>
                                                         
@@ -69,11 +69,13 @@ export const Armagnac = () => {
                                         </div>
                                     </div>
                                     <div className='grid grid-cols-1 gap-4'>
-                                            <p className="font-Trojan text-base font-normal xs:text-ambition-text-color sm:text-ambition-text-color text-justify px-4">
-                                            Of all brandies, Armagnac is certainly the most precious and richest. Indeed, this Gascony speciality, born in the Gers region more than 700 years ago, is still elaborated according to an ancestral know-how in the greatest respect of the traditional method. Ageing is one of the key stages in the making of Armagnac: as the years go by in wood, the crystalline eau-de-vie becomes richer in color, texture, but above all in fragrance.
-                                            <br></br>
-                                            Armagnac is kept in wood barrels for many years, and the longer the maturation, the more rich and complex the brandy becomes. Whatever its age, Armagnac is a real pleasure to taste, whether you like it fiery and warm, or fine and intense.
-                                            </p>
+                                  <p className="font-Trojan text-base font-normal xs:text-ambition-text-color sm:text-ambition-text-color text-justify px-4">  
+                                    Description : Exquisite Armagnac with pale gold hue and refreshing, floral notes on the nose invite you to a delightful experience. The palate reveals a pleasing and lively character, accentuated by vibrant lemony notes, making it a perfect choice for those seeking a bright and refreshing indulgence.
+                                                            <br></br>
+                                                            Color : Amber, pale gold.<br></br>
+                                                            Nose : Fresh, with floral notes.<br></br>
+                                                            Palate : Pleasant and lively with hints of lemon and honey.
+                                                            </p>
                                     </div>
                             </div>
                             

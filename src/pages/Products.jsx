@@ -6,16 +6,16 @@ import { useInView } from "react-intersection-observer";
 import Plx from "react-plx";
 import drum from '../assets/images/products/drum.png';
 import productTitle from '../assets/images/products/title.png';
-import armagnacBottle from '../assets/images/armagnac-bottle.png';
+import armagnacBlur from '../assets/images/armagnac-blur.png';
 import armagnacBottle1 from '../assets/images/armagnac-bottle1.png'
 import marie from '../assets/images/marie-img.png';
-import cognacBottle from '../assets/images/cognac-bottle.png';
+import cognacBlur from '../assets/images/cognac-blur.png';
 import cognacBottle1 from '../assets/images/cognac-bottle1.png';
-import xoBottle from '../assets/images/xo-bottle.png';
+import xoBlur from '../assets/images/xo-blur.png';
 import xoBottle1 from '../assets/images/xo-bottle1.png';
-import borduexWine from '../assets/images/bordeaux-bottle.png';
+import borduexBlur from '../assets/images/bordeaux-blur.png';
 import borduexWine1 from '../assets/images/bordeaux-bottle1.png'
-import saintemilionBottle from '../assets/images/saint-emilion-bottle.png';
+import saintemilionBlur from '../assets/images/saint-emilion-blur.png';
 import saintemilionBottle1 from '../assets/images/saint-emilion-bottle1.png';
 import legrand from '../assets/images/legrand-img.png';
 import lafeyetee from '../assets/images/lafeyette-img.png';
@@ -178,7 +178,7 @@ export const Products = () => {
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div1}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div1Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={armagnacBottle} /> }
+                                                {!div1Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch d-none d-none'  src={armagnacBlur} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div1Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={armagnacBottle1} /> }
@@ -221,7 +221,7 @@ export const Products = () => {
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div2}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div2Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={cognacBottle} /> }
+                                                {!div2Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={cognacBlur} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div2Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={cognacBottle1} /> }
@@ -324,7 +324,7 @@ export const Products = () => {
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div3}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div3Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={xoBottle} /> }
+                                                {!div3Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={xoBlur} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div3Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={xoBottle1} /> }
@@ -352,7 +352,7 @@ export const Products = () => {
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div4}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div4Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={borduexWine} /> }
+                                                {!div4Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={borduexBlur} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div4Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={borduexWine1} /> }
@@ -464,7 +464,7 @@ export const Products = () => {
                                <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div5}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBottle} /> }
+                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBlur} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div5Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={saintemilionBottle1} /> }

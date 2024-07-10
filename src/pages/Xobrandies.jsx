@@ -17,13 +17,14 @@ export const Xobrandies = () => {
   return (
     <div>
       <HamburgerMenu/>
-    <div
+      <div
     style={{
       '--xs-img': `url(${homebgRes})`,
       '--sm-img': `url(${homebgRes})`,
-      '--md-img': `url(${homeBg})`,
+      '--md-img': `url(${homebgRes})`,
+      '--lg-img': `url(${homeBg})`,
     }}
-    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto  bg-center bg-no-repeat ' >
+    className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] lg:bg-[image:var(--lg-img)] bg-home-bg bg-[#2b1809] w-full h-screen xs:min-h-screen xs:h-auto sm:min-h-screen sm:h-screen md:min-h-screen md:h-auto lg:min-h-screen lg:h-auto bg-center bg-no-repeat  ' >
             <video muted={true} autoPlay={true} playsInline={true} loop={true} className='  absolute smoke_video  scale-x-[-1]'  >
                 <source src={smoke} type="video/mp4" /> 
              </video>
@@ -52,13 +53,14 @@ export const Xobrandies = () => {
                                                     dark:first-letter:text-ambition-text-color 
                                                     first-letter:me-3 first-letter:float-start 
                                                     text-justify px-4 text-sm">
-                                                            Description : A masterpiece with a dark amber hue, subtle notes of dark chocolate, caramel, and a palate that unfolds honey, bush-peach, figs, and chocolate, leaving a remarkably intense and complex aftertaste. The ultimate choice for epicureans seeking an extraordinary experience.
-                                                            <br></br><br></br>
-                                                            Color : Dark amber colour with copper reflexions. It is a blend of very old brandies that has been rested in oak cognac barrels for several years. <br></br>
+                                                         Althought Brandy is a more general spirt and can be produced in various countries worldwide, each with its own regulations and terroir, French Brandy is a spirit associateed with France like Cognac and 
+Armagnac preserving the terroir influence of France.
+French Brandy can be produced in various regions of France with grapes grown from France allowing greater flexibility in terms of grape varieties, terroir, distillation and aging regulations. It should be noted that Brandy produced with the  grape varieties grown outside of France are 
+not qualified for the title French Brandy. So the spirit with the title French Brandy is considered to be more qualitative and premium than the spirit named with the title Brandy.
 
-Nose : The nose is impressively aromatic, yet subtle and delightful, melted notes of dark chocolate and caramel. <br></br>
+In contrast to Cognac and Armagnac that has a renowed flavor profile, the flavor profile of French Brandy can vary widely based on the type of grapes used and the production method. It can range from fruity and aromatic to richer and spicier profiles.
 
-Palate : In the palate it releases fragrances of honey, bush-peach, figs and chocolate. The aftertaste is exceptionnaly long, very intense and complex. <br></br>
+                                           
                                                             </p>
 
 
@@ -72,9 +74,14 @@ Palate : In the palate it releases fragrances of honey, bush-peach, figs and cho
                                     </div>
                                     <div className='grid grid-cols-1 gap-4'>
                                             <p className="font-Trojan text-base font-normal text-sm  xs:text-ambition-text-color sm:text-ambition-text-color text-justify px-4">
-                                            In 1771, he began his training at Versailles and became close to the royal family. He took part in the major upheavals of the 18th century, which were the American War of Independence, the French Revolution, the Restoration and also the July Revolution of 1830.
-                                            <br></br>
-                                            In 1771, he began his training at Versailles and became close to the royal family. He took part in the major upheavals of the 18th century, which were the American War of Independence, the French Revolution, the Restoration and also the July Revolution of 1830.
+                                            Description : A masterpiece with a dark amber hue, subtle notes of dark chocolate, caramel, and a palate that unfolds honey, bush-peach, figs, and chocolate, leaving a remarkably intense and complex aftertaste. The ultimate choice for epicureans seeking an extraordinary experience.
+                                                            <br></br>
+                                                            Color : Dark amber colour with copper reflexions. It is a blend of very old brandies that has been rested in oak cognac barrels for several years. <br></br>
+
+Nose : The nose is impressively aromatic, yet subtle and delightful, melted notes of dark chocolate and caramel. <br></br>
+
+Palate : In the palate it releases fragrances of honey, bush-peach, figs and chocolate. The aftertaste is exceptionnaly long, very intense and complex. <br></br>
+                                            
                                             </p>
                                     </div>
                             </div>

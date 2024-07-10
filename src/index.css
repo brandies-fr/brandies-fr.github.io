@@ -251,31 +251,26 @@ video{
 
  
   /* Products */
-  .bottle-rotate-sketch{
-	opacity: 1; /* Initially visible */
-    transform: rotateY(0deg); /* Initially rotated to 180deg (reverse of original) */
-    transition: opacity 0.5s ease, transform 2s ease; /* Transition properties */
-    /* Adjust transform-origin if needed */
+  .bottle-rotate-sketch{  
+    transition: opacity 0.5s ease, transform 2s ease;   
     transform-origin: center center;
 	animation: rotate-animation-sketch ease 2s;
  }
  @keyframes rotate-animation-sketch {
 	0% {
-		opacity: 0;
-	  transform: rotateY(180deg);
-	}
-	50% {
-		opacity: 0.5;
-		transform: rotateY(90deg);	 
+		
+		filter: blur(0px);	
+	
 	}
 	100% {
-		opacity: 1;
-	  transform: rotateY(0deg);
+		
+		filter: blur(5px);	 
+		
 	}
+
   }
   .bottle-rotate-original{
-	opacity: 1; /* Initially hidden */
-    transform: rotateY(0deg); /* Initially rotated to -180deg (reverse of sketch) */
+
     transition: opacity 0.5s ease, transform 2s ease; /* Transition properties */
 
     /* Adjust transform-origin if needed */
@@ -284,17 +279,16 @@ video{
   }
   @keyframes rotate-animation-original {
 	0% {
-		opacity: 0;
-		transform: rotateY(-180deg);	 
+		
+		filter: blur(5px);	 
 	}
-	50% {
-		opacity: 0.5;
-		transform: rotateY(-90deg);	 
-	}
+
 	100% {
-		opacity: 1;
-		transform: rotateY(0deg);
+		
+		filter: blur(0px);	
+		
 	}
   }
+ 
 
 

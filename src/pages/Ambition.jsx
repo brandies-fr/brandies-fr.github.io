@@ -8,7 +8,7 @@ import bgoddRes from '../assets/images/ambition-responsive-bg.jpg';
 import bgEven from '../assets/images/bg-even.jpg';
 import bgevenRes from '../assets/images/bg-even-responsive.jpg';
 // Video
-import campFire from '../assets/video/campfire.mp4'
+// import campFire from '../assets/video/campfire.mp4'
 import smoke from '../assets/video/smoke.mp4';
 // images
 import gateImage from '../assets/images/ambition/gate.png';
