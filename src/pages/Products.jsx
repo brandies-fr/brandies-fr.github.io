@@ -1,22 +1,26 @@
 // import React from 'react'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { animateWithGsap } from "../utils/animations";
 import HamburgerMenu from '../components/HamburgerMenu';
 import { useInView } from "react-intersection-observer";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import Plx from "react-plx";
 import drum from '../assets/images/products/drum.png';
 import productTitle from '../assets/images/products/title.png';
-import armagnacBlur from '../assets/images/armagnac-blur.png';
+import armagnacBlur from '../assets/images/armagnac-bottle.png';
 import armagnacBottle1 from '../assets/images/armagnac-bottle1.png'
 import marie from '../assets/images/marie-img.png';
-import cognacBlur from '../assets/images/cognac-blur.png';
+import cognacBlur from '../assets/images/cognac-bottle.png';
 import cognacBottle1 from '../assets/images/cognac-bottle1.png';
-import xoBlur from '../assets/images/xo-blur.png';
+import xoBlur from '../assets/images/xo-bottle.png';
 import xoBottle1 from '../assets/images/xo-bottle1.png';
-import borduexBlur from '../assets/images/bordeaux-blur.png';
+import borduexBlur from '../assets/images/bordeaux-bottle.png';
 import borduexWine1 from '../assets/images/bordeaux-bottle1.png'
-import saintemilionBlur from '../assets/images/saint-emilion-blur.png';
+// import saintemilionBlur from '../assets/images/saint-emilion-blur.png';
 import saintemilionBottle1 from '../assets/images/saint-emilion-bottle1.png';
+import saintemilionBottle from '../assets/images/saint-emilion-bottle.png';
 import legrand from '../assets/images/legrand-img.png';
 import lafeyetee from '../assets/images/lafeyette-img.png';
 import jaques from '../assets/images/jaques-img.png';
@@ -59,7 +63,46 @@ export const Products = () => {
     /* Optional options */
     threshold: 0.9,
   });
-  
+  gsap.registerPlugin(useGSAP);
+  const container = useRef();
+  useGSAP(
+    () => {
+      gsap.from("#armagnac-text", { 
+        duration: 2,
+        rotation: 360,
+        delay: 1,
+    },
+    { scope: container }
+),
+
+animateWithGsap(
+  "#g_grow",  {
+    scale: 1,
+    rotateY: -360,
+    ease: "power1",
+    duration: 2,
+  },
+  {
+    scrub:5,
+  }
+);
+// animateWithGsap(
+//   "#g_grow1",  {
+//     // scale: 1,
+//     rotateY: 180,
+//     // ease: "power1",
+//     duration: 2,
+//   },
+//   {
+//     scrub: 2.5,
+//   }
+// );
+    }); //
+
+
+
+ 
+
   return (
     <div>
       <HamburgerMenu/>
@@ -134,13 +177,13 @@ export const Products = () => {
         <div className="flex items-center justify-center pt-20"> 
         <img className='w-96 h-auto '  src={armagnacTitle} /> 
         </div>           
-              <div className='container mx-auto p-5 text-center '>
+              <div className='container mx-auto p-5 text-center   '>
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[55%_auto] ">                 
                     
-                              <article class="text-wrap ">
+                              <article class="text-wrap " >
                                   <div className=' grid grid-cols-1 gap-4  place-items-center  '>
                                                                                                              
-                                        <p className=' font-Trojan 
+                                        <p  className=' font-Trojan 
                                    mb-3                                                                    
                                    text-sm
                                    font-medium                                  
@@ -152,7 +195,8 @@ export const Products = () => {
                                    dark:first-letter:text-ambition-text-color 
                                    first-letter:me-3 
                                    first-letter:float-start 
-                                   text-justify'>
+                                   text-justify
+                                  '>
                                      Description : Exquisite Armagnac with pale gold hue and refreshing, floral notes on the nose invite you to a 
                                       delightful experience. The palate reveals a pleasing and lively character, accentuated by vibrant lemony notes, 
                                       making it a perfect choice for those seeking a bright and refreshing indulgence.
@@ -174,8 +218,15 @@ export const Products = () => {
                                     </div>
                                     
                                   </article>
-                                  
-                                  <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
+                                  <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective overlow-hidden'>
+                                          <div  className='relative preserve-3d   w-11/12  xs:w-full  ' >                                                
+                                              <div className='  xs:h-auto   flex items-center justify-center  '>
+                                                    <img id="g_grow" className='w-10/12 h-auto '  src={armagnacBottle1} />                                                    
+                                                    </div>
+                                          </div>                                
+                              </div>
+                            
+                                  {/* <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div1}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
                                                 {!div1Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch d-none d-none'  src={armagnacBlur} /> }
@@ -184,7 +235,7 @@ export const Products = () => {
                                                     {div1Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={armagnacBottle1} /> }
                                                     </div>
                                           </div>                                
-                              </div>                              
+                              </div>                               */}
                               {/* <div className="grid grid-cols-1 gap-4 bg-transparent  group perspective">
                                   <div className="relative preserve-3d w-11/12 xs:w-full  armagnac-section">
                                     <div
@@ -451,7 +502,9 @@ export const Products = () => {
                                     and stands as the sole survivor among the royal children during the French Revolution of 1789. </p>
                                     </div>
                                   </article>
-                                  {/* <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
+                             
+                              {/* Hover */}
+                              {/* <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                   <div className='relative preserve-3d  group-hover:my-rotate-y-180  w-full  xs:w-full duration-1000'>
                                       <div className='absolute   w-full h-screen xs:h-auto backface-hidden'>
                                         <img className='w-full h-auto'  src={saintemilionBottle} />
@@ -464,7 +517,7 @@ export const Products = () => {
                                <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
                                           <div ref={div5}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBlur} /> }
+                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBottle} /> }
                                                     </div>
                                               <div className='  xs:h-auto   flex items-center justify-center  '>
                                                     {div5Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={saintemilionBottle1} /> }

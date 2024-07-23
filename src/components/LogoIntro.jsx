@@ -1,10 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import logowebm from "../assets/video/brandies.webm";
 import logomov from "../assets/video/brandies.mov";
-import mobileLogo from "../assets/video/mobile-logo.webm";
-import mobileLogomov from "../assets/video/mobile-logo-withbg.mp4";
+// import mobileLogo from "../assets/video/mobile-logo.webm";
+// import mobilelogoGif from "../assets/video/mobile-logo.gif";
+import mobileLogomp4 from "../assets/video/mobile-logo-withbg.mp4";
 import homeBg from '../assets/images/homepage-bg.jpg';
 import homebgRes from '../assets/images/home-mob-res.jpg';
+
+
 
 export const LogoIntro = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
@@ -18,20 +23,9 @@ export const LogoIntro = () => {
       setKey(prevKey => prevKey + 1); // Change key to force re-render
     };
 
-    const replayVideo = () => {
-      if (videoRef.current) {
-        videoRef.current.currentTime = 0; // Rewind video to start
-        videoRef.current.play(); // Start playing again
-      }
-    };
-
-    // Set interval to replay video every 15 seconds
-    const intervalId = setInterval(replayVideo, 15000);
-
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
-      clearInterval(intervalId); // Clean up interval on component unmount
     };
   }, []); // Empty dependency array ensures effect runs only once on mount
 
@@ -44,6 +38,23 @@ export const LogoIntro = () => {
       }}
       className='relative xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] bg-home-bg bg-[#2b1809] w-full h-screen sm:min-h-screen sm:h-screen xs:min-h-screen xs:h-auto bg-cover bg-center bg-no-repeat overflow-hidden'
     >
+      {/* {isMobile ? (
+        <img src={mobileLogomp4} alt="Mobile Logo" className="w-full h-screen object-cover absolute" />
+      ) : (
+        <video
+          ref={videoRef}
+          key={key} 
+          muted
+          autoPlay
+          playsInline         
+          className="w-full h-screen absolute object-cover -top-12"
+        >
+          <>
+            <source src={logomov} type="video/mp4; codecs=hvc1" />
+            <source src={logowebm} type="video/webm" />
+          </>
+        </video>
+      )} */}
       <video
         ref={videoRef}
         key={key} // Use key to force re-render
@@ -55,8 +66,8 @@ export const LogoIntro = () => {
       >
         {isMobile ? (
           <>
-            <source src={mobileLogomov} type="video/mp4" />
-            <source src={mobileLogo} type="video/webm" />
+            <source src={mobileLogomp4} type="video/mp4 " />
+            {/* <source src={mobileLogo} type="video/webm" /> */}
           </>
         ) : (
           <>
@@ -83,6 +94,7 @@ export const LogoIntro = () => {
 };
 
 export default LogoIntro;
+
 
 
 

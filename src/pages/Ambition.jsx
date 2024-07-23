@@ -256,19 +256,20 @@ export const Ambition = () => {
            
         </div>
         {/*Passion*/}
-        <div style={{
+        
+         <div style={{
           '--md-img': `url(${bgEven})`,
           '--xs-img': `url(${bgevenRes})`,
           '--sm-img': `url(${bgevenRes})`,
         }}
-        className=' xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)]  w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
+        
+        className=' xs:bg-[image:var(--xs-img)] sm:bg-[image:var(--sm-img)] md:bg-[image:var(--md-img)] w-full h-auto  bg-cover bg-center bg-no-repeat  ' >
             <video muted={true} autoPlay={true} playsInline={true} loop={true} className='  absolute scale-x-[-1]   smoke_video '  >
                               <source src={smoke} type="video/mp4" />
                           </video>
               <div className='container mx-auto  text-center '>
                   <div className="grid grid-cols-1 md:grid-cols-2 ">
-                  <div className=' grid grid-cols-1 place-items-center pt-3 '>
-                
+                  <div className=' grid grid-cols-1 place-items-center pt-5'>
                                    <img className='w-full h-auto md:w-11/12'  src={passionImg} />
                               </div>
                                   <article class="text-wrap ">
@@ -301,8 +302,7 @@ export const Ambition = () => {
                          
                             
                     </div>
-                </div>
-            
+                </div>            
         </div>
     
     </div>
