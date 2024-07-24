@@ -11,8 +11,22 @@
     <title>Luxury Wine and Spirits</title>
    
   </head>
-  <body>
-    <div id="root"></div>
+  <style>
+    .container-loading{
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      width: 100vw;
+    }
+  </style>
+  <body style="margin: 0px;">
+    
+    <div id="root">
+      <div id="pageLoading" class="container-loading">
+        <img src="/src/assets/images/logo-loading.gif" alt="Loading" />
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

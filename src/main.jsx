@@ -17,7 +17,6 @@ import { Xobrandies } from './pages/Xobrandies.jsx';
 import Bordeauxsuperieur from './pages/Bordeauxsuperieur.jsx';
 import { Lusscsaintemillion } from './pages/Lusscsaintemillion.jsx';
 
-
 // const inputElement = useRef(null);
 const router = createBrowserRouter([
   {

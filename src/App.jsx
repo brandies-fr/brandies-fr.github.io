@@ -1,19 +1,40 @@
-import React from 'react';
+import React,{Suspense, useState} from 'react';
 import './App.css';
 import HamburgerMenu from './components/HamburgerMenu';
 // import { HeaderIcons } from './components/HeaderIcons';
 import { LogoIntro } from './components/LogoIntro';
-
-
+// const LogoIntro = React.lazy(() => import ("./components/LogoIntro"));
+// import LazzyLoading from './components/LazzyLoading';
 
 function App() {
- 
+//  Page loading
+  // const [loading, setloading] = useState(true);
+  // const pageLoading = document.getElementById('pageLoading');
+  // if(pageLoading){
+  //   setTimeout(() =>{
+  //     pageLoading.style.display = "none";
+  //     setloading(false);
+  //   }, 2000);
+  // }
   return (
     <>
+    {/* <Suspense fallback={<div class="loading-text">Loading..</div>}> */}
       <LogoIntro />
       <HamburgerMenu />
-      {/* <HeaderIcons /> */}
-    </>
+    {/* </Suspense> */}
+   
+    {/* <LazzyLoading/> */}
+
+    {/* <HeaderIcons /> */}
+  </>
+    // !loading && (
+    //   <>
+    //   <LogoIntro />
+    //   <HamburgerMenu />
+    //   {/* <HeaderIcons /> */}
+    // </>
+    // )
+   
   );
 }
 

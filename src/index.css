@@ -134,6 +134,15 @@ video{
 	letter-spacing: -0.5px;
 	
   }
+  .loading-text{
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+	font-size: 1rem;
+	color: #a90000;
+  }
   /**********************
 	Social Media icon
 ***********************/
