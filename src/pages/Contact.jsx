@@ -1,5 +1,6 @@
 import React from 'react'
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import contactMap from '../assets/images/contact-map.png';
 import whoweareBg from "../assets/images/whoweare-bg.jpg";
@@ -8,6 +9,7 @@ export const Contact = () => {
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon/>
       {/* <HeaderIcons/> */}
  
       <div

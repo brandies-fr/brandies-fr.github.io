@@ -1,5 +1,6 @@
 import React from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 import xoLogo from '../assets/images/xo-logo.png'
 import xoBottle from '../assets/images/xo-bottle1.png'
 import homeBg from '../assets/images/product-single-bg.jpg';
@@ -17,6 +18,7 @@ export const Xobrandies = () => {
   return (
     <div>
       <HamburgerMenu/>
+     <BrochureIcon />
       <div
     style={{
       '--xs-img': `url(${homebgRes})`,

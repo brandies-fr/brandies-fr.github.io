@@ -16,6 +16,8 @@ import Cognac from './pages/Cognac.jsx';
 import { Xobrandies } from './pages/Xobrandies.jsx';
 import Bordeauxsuperieur from './pages/Bordeauxsuperieur.jsx';
 import { Lusscsaintemillion } from './pages/Lusscsaintemillion.jsx';
+// import Brochure from './pages/_Brochure.jsx';
+
 
 // const inputElement = useRef(null);
 const router = createBrowserRouter([
@@ -64,6 +66,10 @@ const router = createBrowserRouter([
     path: "lussacsaintemillion",
     element: < Lusscsaintemillion/>,
   },
+  // {
+  //   path: "brochure",
+  //   element: <Brochure/>,
+  // },
   {
     path: "*",
     element: <Notfound />,
@@ -107,6 +113,9 @@ switch (true) {
         break;
     case l.href.includes("lussacsaintemillion"):
           router.navigate("/lussacsaintemillion");
+          break;
+    case l.href.includes("brochure"):
+          router.navigate("/brochure");
           break;
   default:
     router.navigate("/");

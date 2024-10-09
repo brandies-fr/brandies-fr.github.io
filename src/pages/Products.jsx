@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { animateWithGsap } from "../utils/animations";
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 import { useInView } from "react-intersection-observer";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import Plx from "react-plx";
@@ -43,48 +44,103 @@ import saintemillionTitle from '../assets/images/saintemillion-title.png'
 
 
 export const Products = () => {
-  const { ref: div1, inView: div1Inview,  } = useInView({
-    /* Optional options */
-    threshold: 0.6,
-  });
-  const { ref: div2, inView: div2Inview,  } = useInView({
-    /* Optional options */
-    threshold: 0.7,
-  });
-  const { ref: div3, inView: div3Inview,  } = useInView({
-    /* Optional options */
-    threshold: 0.8,
-  });
-  const { ref: div4, inView: div4Inview,  } = useInView({
-    /* Optional options */
-    threshold: 0.9,
-  });
-  const { ref: div5, inView: div5Inview,  } = useInView({
-    /* Optional options */
-    threshold: 0.9,
-  });
+  // const { ref: div1, inView: div1Inview,  } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.6,
+  // });
+  // const { ref: div2, inView: div2Inview,  } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.7,
+  // });
+  // const { ref: div3, inView: div3Inview,  } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.8,
+  // });
+  // const { ref: div4, inView: div4Inview,  } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.9,
+  // });
+  // const { ref: div5, inView: div5Inview,  } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.9,
+  // });
   gsap.registerPlugin(useGSAP);
   const container = useRef();
   useGSAP(
     () => {
       gsap.from("#armagnac-text", { 
-        duration: 2,
-        rotation: 360,
-        delay: 1,
+        // duration: 2,
+        // rotation: -360,
+        // delay: 1,
     },
-    { scope: container }
+    // { scope: container }
 ),
 
 animateWithGsap(
-  "#g_grow",  {
-    scale: 1,
-    rotateY: -360,
+  "#g_grow",     {
+  //  scale: 0.5,
+   scale:1.3,
     ease: "power1",
-    duration: 2,
+    duration: 1,
   },
   {
     scrub:5,
   }
+);
+animateWithGsap(
+  "#cognac_grow",  {
+    // scale: 1.2,
+    // rotateY: -360,
+    // scale: 0.7,
+    scale:1.2,
+    ease: "power1",
+    duration: 1,
+  },
+  {
+    scrub:5,
+  }  
+);
+animateWithGsap(
+  "#xo_grow",  {
+    // scale: 1,
+    // rotateY: -360,
+    // scale: 0.7,
+    scale:1.2,
+    ease: "power1",
+    duration: 1,
+  },
+  {
+    scrub:5,
+  }
+  
+);
+animateWithGsap(
+  "#bor_grow",  {
+    // scale: 1,
+    // rotateY: -360,
+    // scale: 0.7,
+    scale:1.4,
+    ease: "power1",
+    duration: 1,
+  },
+  {
+    scrub:5,
+  }
+  
+);
+animateWithGsap(
+  "#saint_grow",  {
+    // scale: 1,
+    // rotateY: -360,
+    // scale: 0.7,
+    scale:1.5,
+    ease: "power1",
+    duration: 1,
+  },
+  {
+    scrub:5,
+  }
+  
 );
 // animateWithGsap(
 //   "#g_grow1",  {
@@ -106,6 +162,7 @@ animateWithGsap(
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon/>
       
       {/* <HeaderIcons/> */}
     {/* <Navbar /> */}
@@ -270,13 +327,11 @@ animateWithGsap(
               
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto]">                 
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                          <div ref={div2}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                          <div   className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div2Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={cognacBlur} /> }
+                                                <img id="cognac_grow" className='w-10/12 h-auto '  src={cognacBottle1} /> 
                                                     </div>
-                                              <div className='  xs:h-auto   flex items-center justify-center  '>
-                                                    {div2Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={cognacBottle1} /> }
-                                                    </div>
+                                            
                                           </div>                                
                               </div>       
                               <article class="text-wrap ">
@@ -373,13 +428,11 @@ animateWithGsap(
                                     </div>
                                   </article>
                                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                          <div ref={div3}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                          <div  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div3Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={xoBlur} /> }
+                                                <img id="xo_grow" className='w-10/12 h-auto '  src={xoBottle1} /> 
                                                     </div>
-                                              <div className='  xs:h-auto   flex items-center justify-center  '>
-                                                    {div3Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={xoBottle1} /> }
-                                                    </div>
+                                            
                                           </div>                                
                               </div>                              
                     </div>
@@ -401,13 +454,10 @@ animateWithGsap(
               <div className='container mx-auto p-5 text-center '>
                   <div className="grid grid-cols-1 gap-4   md:grid-cols-[45%_auto] ">
                   <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                          <div ref={div4}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                          <div  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div4Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={borduexBlur} /> }
-                                                    </div>
-                                              <div className='  xs:h-auto   flex items-center justify-center  '>
-                                                    {div4Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={borduexWine1} /> }
-                                                    </div>
+                                                <img id="bor_grow" className='w-10/12 h-auto '  src={borduexWine1} />    
+                                                    </div>                                           
                                           </div>                                
                               </div>                    
                          <article class="text-wrap ">
@@ -515,13 +565,11 @@ animateWithGsap(
                                    </div>                                 
                               </div>  */}
                                <div className=' grid grid-cols-1 gap-4 bg-transparent  cursor-pointer group perspective '>
-                                          <div ref={div5}  className='relative preserve-3d   w-11/12  xs:w-full  ' > 
+                                          <div   className='relative preserve-3d   w-11/12  xs:w-full  ' > 
                                                 <div className='  xs:h-auto  flex items-center justify-center '  >
-                                                {!div5Inview && <img className='w-10/12 h-auto  bottle-rotate-sketch  '  src={saintemilionBottle} /> }
+                                                <img id="saint_grow" className='w-10/12 h-auto '  src={saintemilionBottle1} />    
                                                     </div>
-                                              <div className='  xs:h-auto   flex items-center justify-center  '>
-                                                    {div5Inview && <img className='w-10/12 h-auto bottle-rotate-original '  src={saintemilionBottle1} /> }
-                                                    </div>
+                                    
                                           </div>                                
                               </div>   
                                                        

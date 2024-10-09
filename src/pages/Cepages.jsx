@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import Plx from "react-plx";
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import tree from '../assets/images/cepage/tree1.png';
 import cepageTitle from '../assets/images/cepage/title.png';
@@ -21,7 +22,7 @@ return (
 <div>
    {/* <HeaderIcons/> */}
 <HamburgerMenu/>
-  
+<BrochureIcon/>
 <div className='bg-cepage-header-bg  w-full h-screen  bg-cover bg-center bg-no-repeat  overflow-hidden' >
         <div className='  relative h-full flex justify-between items-end top-12'>        
           <Plx

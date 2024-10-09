@@ -131,6 +131,31 @@ const ItemLink = styled(NavLink)`
     transform: translateX(1rem);
   }
 `;
+const StyledLink = styled.a`
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fde602;
+  padding: 1rem 2rem;
+
+  background-image: linear-gradient(
+    60deg,
+    transparent 0%,
+    transparent 50%,
+    #321e05 50%
+  );
+  background-size: 240%;
+  transition: all 0.8s;
+  padding: 0.5rem;
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+    color: ${COLORS.primaryDark};
+    transform: translateX(1rem);
+  }
+`;
 
 function HamburgerMenu() {
   const [click, setClick] = useState(false);
@@ -174,6 +199,12 @@ function HamburgerMenu() {
             <ItemLink onClick={handleClick} to="/products">
               Products
             </ItemLink>
+          </li>
+          <li className="font-Trojan">
+            {/* <ItemLink onClick={handleClick} to="/brochure">
+              Brochure
+            </ItemLink> */}
+            <StyledLink href="https://brochure.brandies.fr" target="_blank"> Brochure</StyledLink>            
           </li>
           <li className="font-Trojan">
             <ItemLink onClick={handleClick} to="/contact">

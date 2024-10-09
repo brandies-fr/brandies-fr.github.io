@@ -2,6 +2,7 @@ import React from 'react'
 import Plx from "react-plx";
 // import { Navbar } from '../components/Navbar'
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import bgOdd from '../assets/images/bg-odd.jpg';
 import bgoddRes from '../assets/images/ambition-responsive-bg.jpg';
@@ -28,6 +29,7 @@ export const Ambition = () => {
   return (
     <div>
      <HamburgerMenu/>
+     <BrochureIcon/>
      {/* <HeaderIcons /> */}
         {/* Header Section */}
         <div className='bg-ambition-header-bg w-full h-screen bg-cover bg-center bg-no-repeat overflow-hidden'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import HamburgerMenu from '../components/HamburgerMenu';
 import { HeaderIcons } from '../components/HeaderIcons';
+import BrochureIcon from "../components/BrochureIcon";
 
 
 function Notfound() {
@@ -8,6 +9,7 @@ function Notfound() {
     <div>
         <HamburgerMenu/>
         <HeaderIcons/>
+        <BrochureIcon/>
         <div className='bg-whoweare-bg bg-[#2b1809]  w-full h-screen sm:min-h-screen sm:h-screen xs:min-h-screen xs:h-auto  bg-cover bg-center bg-no-repeat pt-20' >            
               <div className=' flex items-center justify-center pt-20'>
               <div className=' grid grid-cols-1 gap-4  place-items-center  '>   

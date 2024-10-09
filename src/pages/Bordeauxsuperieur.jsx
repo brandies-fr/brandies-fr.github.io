@@ -1,5 +1,6 @@
 import React from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 import xoLogo from '../assets/images/bordeaux-logo.png'
 import bordeauxBottle from '../assets/images/bordeaux-bottle1.png'
 import homeBg from '../assets/images/product-single-bg.jpg';
@@ -17,6 +18,7 @@ export const Bordeauxsuperieur = () => {
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon/>
       <div
     style={{
       '--xs-img': `url(${homebgRes})`,

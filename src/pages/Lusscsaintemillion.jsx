@@ -1,5 +1,6 @@
 import React from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 import saintemillionLogo from '../assets/images/saintemillion-logo.png'
 import saintemillionBottle from '../assets/images/saint-emilion-bottle1.png'
 import homeBg from '../assets/images/product-single-bg.jpg';
@@ -17,6 +18,7 @@ export const Lusscsaintemillion = () => {
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon/>
       <div
     style={{
       '--xs-img': `url(${homebgRes})`,

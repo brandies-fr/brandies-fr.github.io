@@ -1,5 +1,6 @@
 import React from 'react';
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 import armagnacLogo from '../assets/images/armagnac-logo.png'
 import armagnacBottle from '../assets/images/armagnac.png'
 import homeBg from '../assets/images/product-single-bg.jpg';
@@ -17,6 +18,7 @@ export const Armagnac = () => {
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon/>
     <div
     style={{
       '--xs-img': `url(${homebgRes})`,

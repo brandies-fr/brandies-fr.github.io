@@ -1,5 +1,6 @@
 import React from 'react'
 import HamburgerMenu from '../components/HamburgerMenu';
+import BrochureIcon from "../components/BrochureIcon";
 // import { HeaderIcons } from '../components/HeaderIcons';
 import whoweareImg from '../assets/images/whoweare-img.png';
 import whoweareBg from "../assets/images/whoweare-bg.jpg";
@@ -9,6 +10,8 @@ export const Whoweare = () => {
   return (
     <div>
       <HamburgerMenu/>
+      <BrochureIcon />
+     
       {/* <HeaderIcons/> */}
     {/* <Navbar /> */}
         {/* Header Section */}
