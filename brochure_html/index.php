@@ -1,4 +1,4 @@
-<?php include"config.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -38,9 +38,9 @@
                   <li>
                      <a href="#">Download</a>
                      <ul class="submenu">
-                        <li><a href="./PDF/<?php echo $lang['img_url'] ?>/Brandies_Brochure_Low.pdf" target="_blank">4.5MB</a></li>
-                        <li><a href="./PDF/<?php echo $lang['img_url'] ?>/Brandies_Brochure_Medium.pdf" target="_blank">10.5MB</a></li>
-                        <li><a href="./PDF/<?php echo $lang['img_url'] ?>/Brandies_Brochure_High.pdf" target="_blank">18.5MB</a></li>
+                        <li><a href="./PDF/en/Brandies_Brochure_Low.pdf" target="_blank">4.5MB</a></li>
+                        <li><a href="./PDF/en/Brandies_Brochure_Medium.pdf" target="_blank">10.5MB</a></li>
+                        <li><a href="./PDF/en/Brandies_Brochure_High.pdf" target="_blank">18.5MB</a></li>
                      </ul>
                   </li>
                </ul>
@@ -70,12 +70,12 @@
                   <div class="front">
                      <div id="f1" class="front-content">
                         <!-- <h1>Front 1</h1> -->
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/1.jpg" >
+                        <img src="./images/en/jpg/1.jpg" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b1" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/2.jpg" alt="" >
+                        <img src="./images/en/jpg/2.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -83,12 +83,12 @@
                <div id="p2" class="paper">
                   <div class="front">
                      <div id="f2" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/3.jpg" alt="" >
+                        <img src="./images/en/jpg/3.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b2" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/4.jpg" alt="" >
+                        <img src="./images/en/jpg/4.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -96,12 +96,12 @@
                <div id="p3" class="paper">
                   <div class="front">
                      <div id="f3" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/5.jpg" alt="" >
+                        <img src="./images/en/jpg/5.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b3" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/6.jpg" alt="" >
+                        <img src="./images/en/jpg/6.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -109,12 +109,12 @@
                <div id="p4" class="paper">
                   <div class="front">
                      <div id="f4" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/7.jpg" alt="" >
+                        <img src="./images/en/jpg/7.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b4" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/8.jpg" alt="" >
+                        <img src="./images/en/jpg/8.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -122,12 +122,12 @@
                <div id="p5" class="paper">
                   <div class="front">
                      <div id="f5" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/9.jpg" alt="" >
+                        <img src="./images/en/jpg/9.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b5" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/10.jpg" alt="" >
+                        <img src="./images/en/jpg/10.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -135,12 +135,12 @@
                <div id="p6" class="paper">
                   <div class="front">
                      <div id="f6" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/11.jpg" alt="" >
+                        <img src="./images/en/jpg/11.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b6" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/12.jpg" alt="" >
+                        <img src="./images/en/jpg/12.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -148,12 +148,12 @@
                <div id="p7" class="paper">
                   <div class="front">
                      <div id="f7" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/13.jpg" alt="" >
+                        <img src="./images/en/jpg/13.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b7" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/14.jpg" alt="" >
+                        <img src="./images/en/jpg/14.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -161,12 +161,12 @@
                <div id="p8" class="paper">
                   <div class="front">
                      <div id="f8" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/15.jpg" alt="" >
+                        <img src="./images/en/jpg/15.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b8" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/16.jpg" alt="" >
+                        <img src="./images/en/jpg/16.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -174,12 +174,12 @@
                <div id="p9" class="paper">
                   <div class="front">
                      <div id="f9" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/17.jpg" alt="" >
+                        <img src="./images/en/jpg/17.jpg" alt="" >
                      </div>
                   </div>
                   <div class="back">
                      <div id="b9" class="back-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/18.jpg" alt="" >
+                        <img src="./images/en/jpg/18.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -187,13 +187,13 @@
                <div id="last" class="paper">
                   <div class="front">
                      <div id="f-last" class="front-content">
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/19.jpg" alt="" >
+                        <img src="./images/en/jpg/19.jpg" alt="" >
                      </div>
                   </div>
                   <!-- lastpage -->
                   <div class="back">
                      <div id="b-last" class="back-content" >
-                        <img src="./images/<?php echo $lang['img_url'] ?>/jpg/cover-last.jpg" alt="" >
+                        <img src="./images/en/jpg/cover-last.jpg" alt="" >
                      </div>
                   </div>
                </div>
@@ -204,11 +204,11 @@
             </button>
             <div class="center-menu">
                <div class ="brochure-text "> 
-                  <a href="?lang=en"  >English</a>
+                  <!-- <a href="?lang=en"  >English</a> -->
                   <button id="homeBtn" class="divider-border" >
                   <i class="fa fa-home fa-4x"></i>
                   </button>
-                  <a href="?lang=fr">French</a>
+                  <!-- <a href="?lang=fr">French</a> -->
                </div>
             </div>
          </div>
