@@ -22,6 +22,10 @@ export default defineConfig({
         {
           src: 'CNAME',
           dest: '.'
+        },
+        {
+          src: 'sitemap.xml',  
+          dest: '.'
         }
       ]
     })
